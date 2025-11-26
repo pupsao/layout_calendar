@@ -1,9 +1,8 @@
 $cell-size: 100px;
 $cell-bg: #eee;
 $cell-animation-color: #ffbfcb;
-$animation-size: 20px;
 $gap: 1px;
-$padding: 10px;
+$font-family: Arial, Helvetica, sans-serif;
 $border-size: 1px;
 $calendar-width: calc(7 * #{$cell-size} + 6 * #{$gap});
 $week: (
@@ -56,8 +55,8 @@ body {
     @for $n from 1 through 31 {
       &:nth-child(#{$n})::before {
         content: '#{$n}';
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 30px;
+        font-family: $font-family;
+        font-size: 1.88rem;
       }
     }
     &:hover {
